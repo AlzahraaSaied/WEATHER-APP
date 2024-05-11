@@ -1,0 +1,228 @@
+body {
+    color: #bfc1c8;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    background: #1e202b;
+}
+
+.nav-item a {
+    padding: 5px 25px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    color: white;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    font-weight: 400;
+}
+.nav-item:hover a {
+    border-color: #009ad8;
+    color: #009ad8;
+}
+.search{
+    background-image: url(../image/220318135445-01-canakkale-bridge-turkey.jpg);
+    background-size: cover;
+    padding: 70px 0;
+    min-height: 370px 
+}
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.find-location input[type="text"]{
+    padding: 20px 50px 20px 20px;
+    background: #1e202b;
+    color: white;
+    width: 100%;
+    position: relative;
+    outline: none;
+    border: none;
+}
+.find-location input[type="button"] {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0 40px;
+    background: #009ad8;
+    color: white;
+}
+
+
+th{
+    color: white !important;
+    text-align: center;
+    background-color: #1E202B !important;
+}
+.table{
+    margin-top: -150px;
+    background-color: #1E202B !important;
+}
+td{
+    color: white !important ;
+    background-color: #1E202B !important; 
+    
+}
+
+.table-bordered{
+    border:5px solid #1e202b !important;
+    background-color: #1e202b  !important;
+
+}
+.first-day{
+    width: 33.33%;
+    padding: 30px !important;
+}
+.second-day{
+    width: 33.33%;
+    padding: 30px !important;
+    text-align: center;
+}
+.diff-color{
+    background-color: #262936!important;
+}
+.first-day .custom{
+    margin-bottom: 20px;
+}
+.first-day .degree{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.first-day .degree .num {
+    font-size: 70px;
+    margin-right: 30px;
+    color: black ;
+    font-weight: 700;
+}
+
+span {
+    margin-right: 10px;
+}
+span img {
+    margin-right: 5px;
+    vertical-align: middle;
+    width: 5%;
+}
+.first-day .location {
+    font-size: 1.2857142857em;
+    font-weight: 400;
+}
+.second-day .degree .num {
+    color: black ;
+}
+.second-day .degree {
+    font-size: 1.7142857143em;
+    color: black ;
+    font-weight: 700;
+    margin: 20px;
+}
+.second-day small {
+    font-size: 16px;
+    font-weight: 300;
+}
+.custom{
+    color: #009ad8;
+    margin: 20px 0;
+}
+
+.site-footer {
+    background: #262936;
+    padding: 50px 0;
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.site-footer .subscribe-form {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.site-footer .subscribe-form input[type="text"] {
+    padding: 20px 100px 20px 20px;
+    background: #1e202b;
+    width: 100%;
+    color: white;
+    border-radius: 30px;
+    border: 0;
+}
+.site-footer .subscribe-form input[type="submit"] {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    border-radius: 30px;
+    background-color: #009AD8;
+    color:white;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.social-links a{
+    border: 1px solid transparent;
+    background-color: #1E202B;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    line-height: 2;
+
+}
+
+.social-links a:hover {
+    background: #009ad8;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+        .navbar-toggler{
+            background-color:#009AD8;
+            color: #009AD8;
+        }
+        .forecast-table {
+            display: block; /* Change table display to block */
+            width: 100%;
+            /*position: relative; /* Set table width to 100% */
+        }
+        
+        .forecast-table tr {
+            display: block; /* Change table row display to block */
+            margin-bottom: 10px;
+            position: relative; /* Add some margin between rows */
+        }
+        .forecast-table th:nth-child(2){
+            top: 300px;
+            position: absolute;
+            z-index: 10000000000000000;
+        }
+        .forecast-table th:nth-child(3){
+            top: 560px;
+            position: absolute;
+            z-index: 10000000000000000;
+        }
+        .forecast-table th,
+        .forecast-table td {
+            display: block; /* Change table cell display to block */
+            width: 100%; /* Set cell width to 100% */
+            text-align: center; /* Center-align cell content */
+        }
+}
+
+@media screen and (max-width: 990px) {
+    .first-day .degree .num  {
+        font-size: 40px;
+    }
+    }
+
+@media screen and (max-width: 762px) and (min-width: 600px){
+    .forecast-table  {
+        margin-right: 150px;
+    }
+}
